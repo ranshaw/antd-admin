@@ -1,6 +1,6 @@
 module.exports = {
-  siteName: 'AntD Admin',
-  copyright: 'Ant Design Admin  ©2019 zuiidea',
+  siteName: '运营看板',
+  copyright: '运营看板  ©2019 哗啦啦',
   logoPath: '/logo.svg',
   apiPrefix: '/api/v1',
   fixedHeader: true, // sticky primary layout header
@@ -34,6 +34,6 @@ module.exports = {
         flag: '/china.svg',
       },
     ],
-    defaultLanguage: 'en',
+    defaultLanguage: 'zh',
   },
 }

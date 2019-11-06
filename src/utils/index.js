@@ -9,6 +9,7 @@ export classnames from 'classnames'
 export config from './config'
 export request from './request'
 export { Color } from './theme'
+export * from './helpers'
 
 // export const { defaultLanguage } = i18n
 // export const languages = i18n.languages.map(item => item.key)
@@ -98,14 +99,14 @@ export const deLangPrefix = curry(
    * @return  {string}    Return the pathname after removing the language prefix.
    */
   (languages, pathname) => {
-    if (!pathname) {
-      return
-    }
-    for (const item of languages) {
-      if (pathname.startsWith(`/${item}/`)) {
-        return pathname.replace(`/${item}/`, '/')
-      }
-    }
+    // if (!pathname) {
+    //   return
+    // }
+    // for (const item of languages) {
+    //   if (pathname.startsWith(`/${item}/`)) {
+    //     return pathname.replace(`/${item}/`, '/')
+    //   }
+    // }
 
     return pathname
   }
@@ -117,12 +118,14 @@ export const deLangPrefix = curry(
  * @return  {string}    Return the pathname after adding the language prefix.
  */
 export function addLangPrefix(pathname) {
-  if (!i18n) {
-    return pathname
-  }
+  // if (!i18n) {
+  //   return pathname
+  // }
 
-  const prefix = langFromPath(window.location.pathname)
-  return `/${prefix}${deLangPrefix(pathname)}`
+  // const prefix = langFromPath(window.location.pathname)
+  // return `/${prefix}${deLangPrefix(pathname)}`
+
+  return pathname
 }
 
 const routerAddLangPrefix = params => {

@@ -10,11 +10,10 @@ import api from 'api'
 import config from 'config'
 
 const { queryRouteList, logoutUser, queryUserInfo } = api
-
 const goDashboard = () => {
   if (pathMatchRegexp(['/', '/login'], window.location.pathname)) {
     router.push({
-      pathname: '/dashboard',
+      pathname: '/workbench',
     })
   }
 }
@@ -26,14 +25,14 @@ export default {
       {
         id: '1',
         icon: 'laptop',
-        name: 'Dashboard',
+        name: 'workbench',
         zhName: '仪表盘',
-        router: '/dashboard',
+        router: '/workbench',
       },
     ],
     locationPathname: '',
     locationQuery: {},
-    theme: store.get('theme') || 'light',
+    theme: store.get('theme') || 'dark', // 配置默认主题
     collapsed: store.get('collapsed') || false,
     notifications: [
       {
