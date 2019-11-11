@@ -1,5 +1,3 @@
-/* global window */
-/* global document */
 import React, { PureComponent, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import withRouter from 'umi/withRouter'
@@ -74,10 +72,11 @@ class PrimaryLayout extends PureComponent {
     )
 
     // Query whether you have permission to enter this page
-    const hasPermission = currentRoute
-      ? permissions.visit.includes(currentRoute.id)
-      : false
-
+    // 暂时将权限放开，路由都可以访问
+    // const hasPermission = currentRoute
+    //   ? permissions.visit.includes(currentRoute.id)
+    //   : false
+    const hasPermission = true
     // MenuParentId is equal to -1 is not a available menu.
     const menus = newRouteList.filter(_ => _.menuParentId !== '-1')
 

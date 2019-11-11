@@ -1,12 +1,12 @@
 import React, { PureComponent, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Menu, Icon, Layout, Avatar, Popover, Badge, List } from 'antd'
-import { Ellipsis } from 'ant-design-pro'
+import { Menu, Icon, Layout, Avatar } from 'antd'
+// import { Ellipsis } from 'ant-design-pro'
 import { Trans, withI18n } from '@lingui/react'
-import { setLocale } from 'utils'
-import moment from 'moment'
+// import { setLocale } from 'utils'
+// import moment from 'moment'
 import classnames from 'classnames'
-import config from 'config'
+// import config from 'config'
 import styles from './Header.less'
 
 const { SubMenu } = Menu
@@ -18,14 +18,14 @@ class Header extends PureComponent {
   }
   render() {
     const {
-      i18n,
+      // i18n,
       fixed,
       avatar,
       username,
       collapsed,
-      notifications,
+      // notifications,
       onCollapseChange,
-      onAllNotificationsRead,
+      // onAllNotificationsRead,
     } = this.props
 
     const rightContent = [

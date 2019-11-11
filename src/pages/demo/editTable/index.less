@@ -1,0 +1,36 @@
+@import '~themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    .line {
+      width: 4px;
+      height: 30px;
+      background: @antd-primary-color;
+    }
+    .containerTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      .title {
+        margin-left: 18px;
+        color: #000;
+        font-weight: 500;
+      }
+    }
+    .btns {
+      margin-right: 30px;
+      .save {
+        margin-left: 15px;
+      }
+    }
+  }
+}

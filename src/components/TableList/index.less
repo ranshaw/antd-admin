@@ -1,0 +1,51 @@
+.billInfoItem {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+
+  .item {
+    padding: 6px 4px;
+    border: 1px solid #f2f2f2;
+    border-right: none;
+    display: flex;
+    overflow-wrap: break-word;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  .item:nth-child(even) {
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .item:nth-child(odd) {
+    width: 13%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    background: #fafafa;
+    color: #b7b7b7;
+    font-weight: 400;
+  }
+  .item:last-child {
+    border-right: 1px solid #f2f2f2;
+  }
+}
+
+.noTopBorder {
+  .item {
+    border-top: none;
+  }
+}
+
+:global {
+  .tableList {
+    .ant-select-selection,
+    .ant-input {
+      border: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

@@ -79,7 +79,7 @@ export default {
       // store isInit to prevent query trigger by refresh
       const isInit = store.get('isInit')
       if (isInit) {
-        goDashboard()
+        // goDashboard()
         return
       }
       const { locationPathname } = yield select(_ => _.app)

@@ -10,7 +10,7 @@ export config from './config'
 export request from './request'
 export { Color } from './theme'
 export * from './helpers'
-
+export * from './model'
 // export const { defaultLanguage } = i18n
 // export const languages = i18n.languages.map(item => item.key)
 export const languages = i18n ? i18n.languages.map(item => item.key) : []
